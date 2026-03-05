@@ -1,0 +1,19 @@
+from django.db import migrations
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('cars_of_facts', '0001_initial'),
+    ]
+
+    operations = [
+        migrations.AlterModelOptions(
+            name='car',
+            options={'verbose_name': 'Машину', 'verbose_name_plural': 'Машины'},
+        ),
+        migrations.RemoveField(
+            model_name='car',
+            name='facts',
+        ),
+    ]
